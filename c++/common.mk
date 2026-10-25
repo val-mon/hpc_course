@@ -5,11 +5,11 @@ OUT ?= run
 .DEFAULT_GOAL := run
 .PHONY: run seq clean
 
-run: seq
+run:: seq
 	./$(OUT)
 
-seq:
+seq::
 	$(COMPILER) $(SRC) -o $(OUT)
 
-clean:
+clean::
 	rm -f $(OUT)
