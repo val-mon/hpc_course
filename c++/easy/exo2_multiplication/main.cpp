@@ -11,9 +11,9 @@ string test_file(int number, bool use_endl = false){
     // define file name
     string filename;
     if (use_endl){
-        filename = "Multiple_of_" + to_string(number) + "_endl.txt";
+        filename = "multiple_of_" + to_string(number) + "_endl.txt";
     } else {
-        filename = "Multiple_of_" + to_string(number) + ".txt";
+        filename = "multiple_of_" + to_string(number) + ".txt";
     }
 
     // compute benchmark
