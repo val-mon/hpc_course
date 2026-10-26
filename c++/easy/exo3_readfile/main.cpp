@@ -23,7 +23,7 @@ int main(int argc, char *argv[]){
     }
 
     // open a file in read mode
-    ifstream file(argv[1], ios::in);
+    ifstream file(argv[1]);
     if (!file.is_open()) {
         cerr << "Error: Unable to open file!" << endl;
         exit(1);
